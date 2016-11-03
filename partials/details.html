@@ -1,0 +1,84 @@
+<section>
+    <div ng-model="tshirts">
+        <div class="container">
+            <div class="row">
+                <wrapper class="col-md-12">
+                    <header class="col-md-12">
+                        <h1 class="container">{{tshirts[whichItem].name}}</h1>
+                    </header>
+
+                    <div class="potato col-md-12" ng-app="logoselection" ng-controller="LogoSelector as loser">
+                        <div class="fries col-md-6" ng-style="{'background-image': 'url(images/' + tshirts[whichItem].imgname + '.png)'}">
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(1)" style="background-image: url('logos/batman.png')"></div>
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(2)" style="background-image: url('logos/girls.png')"></div>
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(3)" style="background-image: url('logos/grumpy.png')"></div>
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(4)" style="background-image: url('logos/kitty.png')"></div>
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(5)" style="background-image: url('logos/totoro.png')"></div>
+                            <div class="theselectedlogo" ng-show="loser.checkSelected(6)" style="color: {{color}}">{{yourText}}</div>
+                        </div>
+                        <div class="nuggets col-md-6">
+                            <h3>Price: {{tshirts[whichItem].price * quantity | currency}}</h3>
+                            <br>
+                            <label>Size:
+                                <select>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                    <option value="XXL">XXL</option>
+                                </select>
+                            </label>
+                            <h4>Logo:</h4>
+                            <ul class="logos">
+                                <li>
+                                    <a href ng-click="loser.selectLogo(1)" ng-class="{ activelogo:loser.checkSelected(1) }" style="background-image: url('logos/batman.png')"></a>
+                                </li>
+                                <li>
+                                    <a href ng-click="loser.selectLogo(2)" ng-class="{ activelogo:loser.checkSelected(2) }" style="background-image: url('logos/girls.png')"></a>
+                                </li>
+                                <li>
+                                    <a href ng-click="loser.selectLogo(3)" ng-class="{ activelogo:loser.checkSelected(3) }" style="background-image: url('logos/grumpy.png')"></a>
+                                </li>
+                                <li>
+                                    <a href ng-click="loser.selectLogo(4)" ng-class="{ activelogo:loser.checkSelected(4) }" style="background-image: url('logos/kitty.png')"></a>
+                                </li>
+                                <li>
+                                    <a href ng-click="loser.selectLogo(5)" ng-class="{ activelogo:loser.checkSelected(5) }" style="background-image: url('logos/totoro.png')"></a>
+                                </li>
+                                <li>
+                                    <a href ng-click="loser.selectLogo(6)" ng-class="{ activelogo:loser.checkSelected(6) }">TEXT</a>
+                                </li>
+                            </ul>
+                            <label ng-show="loser.checkSelected(6)">Type your text:
+                                <input type="text" name="text" value="" ng-model="yourText" maxlength="40" placeholder="max 40 letters">
+                                <select ng-model="color" >
+                                    <option value="black" ng-init="color=black" ng-selected="true">Black</option>
+                                    <option value="white" ng-init="color=white">White</option>
+                                </select>
+                            </label>
+                            <br>
+                            <label>Quantity:
+                                <input type="number" name="quantity" ng-model="quantity" ng-init="quantity=1" value="1" min="1">
+                            </label>
+                            <br>
+                            <br>
+                            <button>Add to Cart</button>
+                        </div>
+                    </div>
+                    <a href="index.html">&laquo; Back to search</a>
+                    <div class="col-md-12">
+                        <!-- put the description and reviews here -->
+                        <div id="App2" ng-app="tShirt" ng-controller="StoreController as store">
+                            <div class="list-group-item" ng-repeat="product in store.products">
+
+                                <!--   The review and description Tabs  -->
+                                <shirt-tabs></shirt-tabs>
+
+                            </div>
+                        </div>
+                    </div>
+                </wrapper>
+            </div>
+        </div>
+    </div>
+</section>

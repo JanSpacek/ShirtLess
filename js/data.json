@@ -1,0 +1,149 @@
+[
+  {
+    "name":"100% pure cotton T-shirt - Baby pink",
+    "imgname":"baby_pink",
+    "color":"baby pink",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful baby pink color",
+    "price": 17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Beige",
+    "imgname":"beige",
+    "color":"beige",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful beige color",
+    "price": 17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Black",
+    "imgname":"black",
+    "color":"black",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful black color",
+    "price":17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Brown",
+    "imgname":"brown",
+    "color":"brown",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful brown color",
+    "price":17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Dark blue ",
+    "imgname":"dark_blue",
+    "color":"dark blue",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful dark blue color",
+    "price":17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Dark green ",
+    "imgname":"dark_green",
+    "color":"dark green",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful dark green color",
+    "price":17
+  },
+  {
+    "name":"100% pure cotton T-shirt - Dark grey",
+    "imgname":"dark_grey",
+    "color":"dark grey",
+    "description":"An amazing T-shirt made out of 100% pure cotton with a wonderful dark grey color",
+    "price":17
+  },
+  {
+    "name":"Polyester T-shirt - Fuchsia",
+    "imgname":"fuchsia",
+    "color":"fuchsia",
+    "description":"An amazing polyester T-shirt with a wonderful fuchsia color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Grass green",
+    "imgname":"grass_green",
+    "color":"grass green",
+    "description":"An amazing polyester T-shirt with a wonderful grass green color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Light blue",
+    "imgname":"light_blue",
+    "color":"light blue",
+    "description":"An amazing polyester T-shirt with a wonderful light blue color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Light green",
+    "imgname":"light_green",
+    "color":"light green",
+    "description":"An amazing polyester T-shirt with a wonderful light green color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Light grey",
+    "imgname":"light_grey",
+    "color":"light grey",
+    "description":"An amazing polyester T-shirt with a wonderful light grey color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Lime green",
+    "imgname":"lime_green",
+    "color":"lime green",
+    "description":"An amazing polyester T-shirt with a wonderful lime green color",
+    "price":12
+  },
+  {
+    "name":"Polyester T-shirt - Navy blue",
+    "imgname":"navy_blue",
+    "color":"navy blue",
+    "description":"An amazing polyester T-shirt with a wonderful navy blue color",
+    "price":12
+  },
+  {
+    "name":"Jersey T-shirt - Olive green",
+    "imgname":"olive_green",
+    "color":"olive green",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful olive green color",
+    "price":20
+  },
+  {
+    "name":"Jersey T-shirt - Orange",
+    "imgname":"orange",
+    "color":"orange",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful orange color",
+    "price":20
+  },
+  {
+    "name":"Jersey T-shirt - Purple",
+    "imgname":"purple",
+    "color":"purple",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful purple color",
+    "price":20
+  },
+  {
+    "name":"Jersey T-shirt - Red",
+    "imgname":"red",
+    "color":"red",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful red color",
+    "price":20
+  },
+  {
+    "name":"Jersey T-shirt - White",
+    "imgname":"white",
+    "color":"white",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful white color",
+    "price":20
+  },
+  {
+    "name":"Jersey T-shirt - Wine red",
+    "imgname":"wine_red",
+    "color":"wine red",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful wine red color",
+    "price":20
+  },
+  {
+    "name":"Yellow Jersey T-shirt - Yellow",
+    "imgname":"yellow",
+    "color":"yellow",
+    "description":"An amazing T-shirt made out of 100% organic jersey with a wonderful yellow color",
+    "price":20
+  }
+]

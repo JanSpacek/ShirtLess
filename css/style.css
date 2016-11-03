@@ -1,0 +1,304 @@
+body{
+    background: aliceblue;
+    background-repeat: repeat;
+}
+
+wrapper {
+    padding: 0;
+    height: auto;
+    border: 1px lightgray solid;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+header {
+    padding: 0;
+    margin-bottom: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.potato {
+    padding: 0;
+}
+
+.fries {
+    padding: 0;
+    min-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nuggets {
+    padding: 0;
+    height: 600px;
+}
+
+.drink {
+    padding: 15px 0;
+    border-bottom: 1px lightgray solid;
+    min-height: 100px;
+}
+
+.drink ul {
+    padding: 10px 0 0 0;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+.drink ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+.drink ul li a {
+    margin-right: 20px;
+    display: inline-block;
+    border: 1px lightgray solid;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+}
+.drink ul li a:hover{
+	background: lightgray;
+}
+.logos {
+	width: 80%;
+	height: 50%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.logos li {
+	list-style-type: none;
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 2.5%;
+}
+.logos li a{
+	display: block;
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	padding: 35px 0;
+	text-align: center;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+}
+.logos li a:hover{
+    background-color: darkgray;
+}
+.theselectedlogo {
+	width: 150px;
+	height: 150px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	position: absolute;
+	left: 39%;
+	top: 20%;
+	text-align: center;
+	font-family: Open Sans;
+	font-size: 20px;
+	overflow-y: hidden;
+	word-wrap: break-word;
+	text-transform: uppercase;
+}
+
+.row{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+}
+
+.activelogo {
+	border: 2px green solid !important;
+}
+
+
+
+/**  Marina **/
+
+#searchList ul {
+  display:flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+
+  }
+#searchList li { 
+  background-color: #fff;
+    width: 22.5%;
+    max-width: 220px;
+    margin: 2.5%;
+    list-style-type: none;
+    color: #000;
+    padding: 10px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); 
+  }
+#searchList li:hover{
+    background-color: darkgrey;
+}
+#searchList ul li a {
+  text-decoration: none;
+}
+.list_item_title{
+    max-width: 220px;
+    font-size: 1.2em;
+    color: black;
+}
+.list_item_price{
+  font-size: 1em;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  width:75vw;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  background-image: url('../images/storelogo.png');
+  background-size: auto 75%;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  border-bottom: 1px lightgray solid;
+}
+#search_bar {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  align-items: center;
+  width: 225px;
+    color: #504d4d;
+}
+#site_title{
+  font-size: 4vh;
+  align-self: flex-start;
+  padding-left: 10%;
+  width: 50%;
+  color: black;
+}
+.sub_nav{
+    width: 75%;
+    margin: 0 auto;
+    color: #504d4d;
+}
+
+.ng-scope{
+    margin-top: 2%;
+}
+
+.activelogo{
+    background-color: darkgrey;
+}
+
+/*   Halldor   */
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
+.nav-tabs > li > a:hover{
+  background-color: #599bb3;
+    color:#fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    background-color: #599bb3;
+    color:#fff;   
+}
+
+.review-box {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 2px;
+    border-color: #aaa5a5;
+    
+}
+
+.review-box ul {
+    display: block;
+}
+
+.form-group {
+    border-style: none;
+}
+
+.live-box {
+    background-color: #dddddd;
+}
+
+.myButton {
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:8px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#storelogo {
+       background: aliceblue url('../images/storelogo.png') center center no-repeat;
+    background-size: 25% auto;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    z-index: 1000;
+    pointer-events: none;
+  }
+/* end of Halldor*/

@@ -1,0 +1,41 @@
+<section>
+	
+
+      <!-- sorting options bar -->
+    <div class="sub_nav">
+
+      <label>Order by:
+        <select ng-model="tshirtOrder">
+        <!-- the names  of the values must match the information in the data.json file -->
+          <option value="name">Name</option>
+          <option value="price">Price</option>
+        </select>
+      </label>
+
+      <label>
+        <input type="radio" ng-model="direction" name="direction" checked>
+        Ascending
+      </label>
+      <label>
+        <input type="radio" ng-model="direction" name="direction" value="reverse">
+        Descending
+      </label>
+
+    </div>
+<div id="searchList">
+  	<ul> <!-- ng-show enables the code only if what is in the quotes is true, so if there is a query in the search box, it will show the tshirt list  -->
+  		<li ng-animate="'animate'" ng-repeat="item in tshirts | filter: query | orderBy: tshirtOrder:direction"> <!-- this filter called query links to the ng-model="query" in the search box input tag and the tshirtOrder links to the select btag in select box. The tshirtOrder has a subfilter of :direction from the radio inputs-->
+  			<a href="#/details/{{tshirts.indexOf(item)}}">
+  			<!--  indexOf(item) assigns a number to each entry in the tshirts array -->
+  				<img ng-src="images/{{item.imgname}}_tn.png" alt="Photo of {{item.name}}">
+
+  				<div>
+  					<h2 class="list_item_title">{{item.name}}</h2>
+  					<h3 class="list_item_price">{{item.price | currency}}</h3>
+  				</div>
+  			</a>
+  		
+  		</li>
+  	</ul>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+<ul class="nav nav-tabs">
+    <li ng-class="{ active:tab.isSelected(1) }">
+        <a href="" ng-click="tab.selectTab(1)">Description</a>
+    </li>
+
+    <li ng-class="{ active:tab.isSelected(2) }">
+        <a href="" ng-click="tab.selectTab(2)">Reviews</a>
+    </li>
+</ul>
+
+<!--     Description         -->
+<div ng-show="tab.isSelected(1)">
+    <h4>Description</h4>
+    <blockquote>{{product.description}}</blockquote>
+</div>
+
+<!--     Review            -->
+<div ng-show="tab.isSelected(2)">
+   
+<!--  List of reviews     -->
+    <ul>
+        <h4>Reviews</h4>
+        <li ng-repeat="review in product.reviews">
+            <div class="review-box">
+                <h5>{{review.stars}} star rating</h5> {{review.body}}
+                <cite class="clearfix">{{review.author}}</cite>
+            </div>
+        </li>
+    </ul>
+
+<!--  The Review Form -->
+    <form name="reviewForm" ng-controller="ReviewController as reviewMaster" ng-submit="reviewForm.$valid && reviewMaster.addReview(product)" novalidate>
+
+<!--   A live preview      -->
+       <h4>Your review</h4>
+        <div class="review-box live-box">
+            <h5>{{reviewMaster.review.stars}} star rating</h5> {{reviewMaster.review.body}}
+            <cite class="clearfix">—{{reviewMaster.review.author}}</cite>
+        </div>
+
+       
+        <h4>Submit a Review</h4>
+        <fieldset class="form-group">
+            <select ng-model="reviewMaster.review.stars" required class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
+                <option value="">Rate the T-Shirt</option>
+            </select>
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea ng-model="reviewMaster.review.body" required class="form-control" placeholder="Review" title="Review"></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+            <input ng-model="reviewMaster.review.author" required class="form-control" placeholder="Name" title="Name" />
+        </fieldset>
+        <fieldset class="form-group">
+            <input type="submit" class="myButton" value="Send Review" />
+        </fieldset>
+    </form>
+</div>
+
+
